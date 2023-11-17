@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jota Works | Web Development Made Simple</title>
+
+    <!-- <script defer src="./js/main.js"></script> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon"> &nbsp; </span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#solutions" class="navigation__link">Solutions</a>
+              <!-- <ul>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Web Design</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Hosting</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">SEO</a>
+                </li>
+              </ul>
+            </li>
+            </ul> -->
+            </li>
+
+            <li class="navigation__item">
+              <a href="#management" class="navigation__link"
+                >Digital Management</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#audits" class="navigation__link">Audits</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#portfolio" class="navigation__link">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__link" href="#"
+          ><img
+            src="img/header-logo.png"
+            alt="Jota Works logo"
+            class="nav__logo"
+            id="logo"
+          />
+        </a>
+        <ul class="nav__links">
+          <li class="nav__item nav__has__sub--solutions">
+            <a class="nav__link" href="#solutions">Solutions</a>
+            <!-- <ul class="nav__sub--solutions">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Web Design</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Hosting</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">SEO</a>
+              </li>
+            </ul> -->
+          </li>
+          <li class="nav__item nav__has__sub--management">
+            <a class="nav__link" href="#management">Digital Management</a>
+            <!-- <ul class="nav__sub--management">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Web Administration</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Content Production</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Marketing</a>
+              </li>
+            </ul> -->
+          </li>
+          <li class="nav__item nav__has__sub--audits">
+            <a class="nav__link" href="#audits">Audits</a>
+            <!-- <ul class="nav__sub--audits">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Website Audit</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">SEO Audit</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Branding Audit</a>
+              </li>
+            </ul> -->
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Web
+          <!-- Highlight effect -->
+          <span class="highlight">Development</span><br />
+          Made <span class="highlight">Simple</span>
+        </h1>
+        <img
+          src="img/Satisfied Customer.jpeg"
+          class="header__img"
+          alt="Web Development Costa Rica"
+        />
+        <h4>
+          A simpler web development experience for security, performance, and a
+          peace of mind.
+        </h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      </div>
+    </header>
+
+    <section class="section" id="solutions">
+      <div class="section__title">
+        <h2 class="section__description">Web Development Solutions</h2>
+        <h3 class="section__header">
+          Everything you need to build your online presence and grow your
+          business.
+        </h3>
+      </div>
+
+      <div class="solutions">
+        <img
+          src="img/Web Development Costa Rica.jpg"
+          data-src="img/Web Development Costa Rica.jpg"
+          alt="Web Development Costa Rica"
+          class="solutions__img lazy-img"
+        />
+
+        <div class="solutions__solution">
+          <div class="solutions__solution--responsive">
+            <div class="solutions__icon">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-monitor"></use>
+              </svg>
+            </div>
+            <h5 class="solutions__header">Web Design and Branding</h5>
+          </div>
+          <p>
+            Strategic web design and branding are powerful tools for business
+            growth. A well-designed website not only attracts visitors but also
+            engages and converts them into customers. Consistent branding builds
+            trust and recognition, making your business memorable. Though a
+            website is a great first step for branding, equally important is the
+            presence of your Google Business Profile. Together, they create a
+            strong online presence that sets you apart, fosters credibility, and
+            drives business expansion.
+          </p>
+        </div>
+
+        <img
+          src="img/Web Hosting Costa Rica.jpg"
+          data-src="img/Web Hosting Costa Rica.jpg"
+          alt="Web Hosting Costa Rica"
+          class="solutions__img solutions__img__hosting--responsive lazy-img u-padding-top-large"
+        />
+        <div
+          class="solutions__solution solutions__solution--hosting u-padding-top-large"
+        >
+          <div class="solutions__solution--responsive">
+            <div class="solutions__icon">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-server"></use>
+              </svg>
+            </div>
+            <h5 class="solutions__header">
+              Hosting, Security, and Maintenance
+            </h5>
+          </div>
+          <p>
+            Critical to your business success, reliable hosting, robust
+            security, and proactive maintenance form the backbone of a thriving
+            online presence. Quality hosting ensures your website is always
+            accessible, fast, and reliable. Robust security measures protect
+            your data and customer information, building trust. Regular
+            maintenance ensures your site remains current, secure, and optimized
+            for peak performance. Together, these elements safeguard your online
+            investment, enabling seamless growth and enhanced customer
+            experiences.
+          </p>
+        </div>
+        <img
+          src="img/Web Hosting Costa Rica.jpg"
+          data-src="img/Web Hosting Costa Rica.jpg"
+          alt="Web Hosting Costa Rica"
+          class="solutions__img solutions__img__hosting--desktop lazy-img u-padding-top-large"
+        />
+
+        <img
+          src="img/SEO Costa Rica.jpg"
+          data-src="img/SEO Costa Rica.jpg"
+          alt="SEO Costa Rica"
+          class="solutions__img solutions__img--SEO lazy-img u-padding-top-large"
+        />
+        <div class="solutions__solution u-padding-top-large">
+          <div class="solutions__solution--responsive">
+            <div class="solutions__icon">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-trending-up"></use>
+              </svg>
+            </div>
+            <h5 class="solutions__header">SEO Best Practices</h5>
+          </div>
+          <p>
+            Implementing SEO best practices is paramount for online visibility
+            and business growth. By optimizing your website's content,
+            structure, and performance, you enhance its search engine rankings,
+            making it easier for potential customers to find you. Thoughtful
+            keyword research, high-quality content, and mobile-friendliness are
+            key. Optimizing meta tags and improving site speed contribute to a
+            seamless user experience. Embracing these SEO strategies drives
+            organic traffic, expanding your reach and increasing your chances of
+            converting visitors into loyal customers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="management">
+      <div class="section__title section__title--managment">
+        <h2 class="section__description">Digital Management solutions</h2>
+        <h3 class="section__header">
+          Elevating Your Online Presence, Every Click of the Way.
+        </h3>
+      </div>
+
+      <div class="management">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="management-box">
+              <div class="management-box__icon management-box__icon--1">
+                <svg>
+                  <use xlink:href="img/icons.svg#icon-award"></use>
+                </svg>
+              </div>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Web Administration
+              </h3>
+              <p class="feature-box__text">
+                Our specialized webmaster solutions excel in crafting and
+                seamlessly integrating fresh content into your online platform.
+                With our expertise, your website stays dynamic and engaging,
+                ensuring your audience receives the latest information and
+                experiences every visit.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="management-box">
+              <div class="management-box__icon management-box__icon--2">
+                <svg>
+                  <use xlink:href="img/icons.svg#icon-book-open"></use>
+                </svg>
+              </div>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Content Production
+              </h3>
+              <p class="feature-box__text">
+                Our content writing solutions are dedicated to delivering
+                high-quality web content tailored to your specific needs. With
+                precise language and strategic optimization, we create
+                compelling website copy that will resonate with your audience
+                and boost your online visibility.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="management-box">
+              <div class="management-box__icon management-box__icon--3">
+                <svg>
+                  <use xlink:href="img/icons.svg#icon-globe"></use>
+                </svg>
+              </div>
+              <h3 class="heading-tertiary u-margin-bottom-small">Marketing</h3>
+              <p class="feature-box__text">
+                Our digital marketing solutions are designed to optimize your
+                online advertising efforts. Through strategic targeting,
+                compelling ad copy, and data-driven insights, we maximize your
+                ROI, drive qualified traffic, and elevate your business's
+                visibility in the competitive digital landscape
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="audits">
+      <div class="section__title">
+        <h2 class="section__description">Audits</h2>
+        <h3 class="section__header">
+          Everything is simple once you know where to begin.
+        </h3>
+      </div>
+
+      <div class="audits__desktop">
+        <div class="audits slider slider__audit">
+          <div class="audits__tab-container">
+            <button
+              class="btn audits__tab audits__tab--1 audits__tab--active"
+              data-tab="1"
+            >
+              Website Audit
+            </button>
+            <button class="btn audits__tab audits__tab--2" data-tab="2">
+              SEO Audit
+            </button>
+            <button class="btn audits__tab audits__tab--3" data-tab="3">
+              Branding Audit
+            </button>
+          </div>
+
+          <div
+            class="audits__content audits__content--1 audits__content--active slide__audit slide__audit--1"
+          >
+            <div class="audits__icon audits__icon--1">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-activity"></use>
+              </svg>
+            </div>
+            <h5 class="audits__header">
+              Unlock Your Website's Potential: Comprehensive Website Audit
+            </h5>
+            <p>
+              Website audits are essential health checks for your online
+              presence. They evaluate your site's speed, ensuring swift user
+              experiences, and assess accessibility, guaranteeing everyone,
+              regardless of abilities, can navigate your content easily. By
+              addressing these factors, audits not only enhance user
+              satisfaction but can also boost the ability for search engines to
+              rank your website, driving more traffic to your site. Regular
+              website audits are key to keeping your online space efficient,
+              inclusive, and competitive.
+            </p>
+          </div>
+
+          <div
+            class="audits__content audits__content--2 slide__audit slide__audit--2"
+          >
+            <div class="audits__icon audits__icon--2">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-bookmark"></use>
+              </svg>
+            </div>
+            <h5 class="audits__header">
+              Elevate Your Online Presence: Discover the Power of SEO
+            </h5>
+            <p>
+              A website SEO audit is your compass in the digital landscape. It
+              goes beyond keywords, delving into the intricate web of factors
+              that influence your online visibility. From content quality and
+              site structure to user experience, an SEO audit uncovers the
+              strengths and weaknesses of your digital presence. By addressing
+              these multifaceted elements, you not only improve search engine
+              rankings but also enhance user engagement and trust. Think of it
+              as a holistic checkup for your website, ensuring it thrives amidst
+              the complexities of the online world.
+            </p>
+          </div>
+          <div
+            class="audits__content audits__content--3 slide__audit slide__audit--3"
+          >
+            <div class="audits__icon audits__icon--3">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-codepen"></use>
+              </svg>
+            </div>
+            <h5 class="audits__header">
+              Crafting a Distinct Identity: Explore How Branding Impacts
+              Exposure
+            </h5>
+            <p>
+              Your online brand presence is more than just a logo or a tagline;
+              it's the essence of your identity in the digital realm. An online
+              branding presence audit meticulously examines your brand's
+              footprint, analyzing its consistency, resonance, and impact across
+              various platforms. It evaluates the alignment of your messaging,
+              visual elements, and user experience, ensuring a seamless and
+              compelling brand narrative. By conducting this audit, you not only
+              reinforce brand loyalty but also create a powerful, unified
+              presence that resonates with your audience.
+            </p>
+          </div>
+          <button class="slider__audit__btn slider__audit__btn--left">
+            &larr;
+          </button>
+          <button class="slider__audit__btn slider__audit__btn--right">
+            &rarr;
+          </button>
+          <div class="dots dots__audit"></div>
+        </div>
+      </div>
+
+      <!-- RESPONSIVE AUDITS BELOW -->
+
+      <div class="audits__responsive">
+        <div class="audits__responsive__content audits__responsive__content--1">
+          <button
+            class="btn audits__responsive--btn audits__responsive--btn--1"
+          >
+            Website Audit
+          </button>
+          <div class="audits__responsive--container">
+            <div class="audits__responsive__icon audits__responsive__icon--1">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-activity"></use>
+              </svg>
+            </div>
+            <h5 class="audits__responsive__header">
+              Unlock Your Website's Potential: Comprehensive Website Audit
+            </h5>
+          </div>
+          <p>
+            Website audits are essential health checks for your online presence.
+            They evaluate your site's speed, ensuring swift user experiences,
+            and assess accessibility, guaranteeing everyone, regardless of
+            abilities, can navigate your content easily. By addressing these
+            factors, audits not only enhance user satisfaction but can also
+            boost the ability for search engines to rank your website, driving
+            more traffic to your site. Regular website audits are key to keeping
+            your online space efficient, inclusive, and competitive.
+          </p>
+        </div>
+
+        <div class="audits__responsive__content audits__responsive__content--2">
+          <button
+            class="btn audits__responsive--btn audits__responsive--btn--2"
+          >
+            SEO Audit
+          </button>
+          <div class="audits__responsive--container">
+            <div class="audits__responsive__icon audits__responsive__icon--2">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-bookmark"></use>
+              </svg>
+            </div>
+            <h5 class="audits__responsive__header">
+              Elevate Your Online Presence: Discover the Power of SEO
+            </h5>
+          </div>
+          <p>
+            A website SEO audit is your compass in the digital landscape. It
+            goes beyond keywords, delving into the intricate web of factors that
+            influence your online visibility. From content quality and site
+            structure to user experience, an SEO audit uncovers the strengths
+            and weaknesses of your digital presence. By addressing these
+            multifaceted elements, you not only improve search engine rankings
+            but also enhance user engagement and trust. Think of it as a
+            holistic checkup for your website, ensuring it thrives amidst the
+            complexities of the online world.
+          </p>
+        </div>
+
+        <div class="audits__responsive__content audits__responsive__content--3">
+          <button
+            class="btn audits__responsive--btn audits__responsive--btn--3"
+          >
+            Branding Audit
+          </button>
+          <div class="audits__responsive--container">
+            <div class="audits__responsive__icon audits__responsive__icon--3">
+              <svg>
+                <use xlink:href="img/icons.svg#icon-codepen"></use>
+              </svg>
+            </div>
+            <h5 class="audits__responsive__header">
+              Crafting a Distinct Identity: Explore How Branding Impacts
+              Exposure
+            </h5>
+          </div>
+          <p>
+            Your online brand presence is more than just a logo or a tagline;
+            it's the essence of your identity in the digital realm. An online
+            branding presence audit meticulously examines your brand's
+            footprint, analyzing its consistency, resonance, and impact across
+            various platforms. It evaluates the alignment of your messaging,
+            visual elements, and user experience, ensuring a seamless and
+            compelling brand narrative. By conducting this audit, you not only
+            reinforce brand loyalty but also create a powerful, unified presence
+            that resonates with your audience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section__title section__title--portfolio">
+        <h2 class="section__description">My Work</h2>
+        <h3 class="section__header">Check out some of my projects.</h3>
+      </div>
+
+      <div class="container">
+        <div class="portfolios">
+          <div class="portfolio">
+            <a target="_blank" href="https://www.pacificsoulsailing.com">
+              <div class="portfolio-img">
+                <img src="img/pacific-soul-sailing.jpg" alt="SEO Costa Rica" />
+              </div>
+              <div class="portfolio-text">
+                <div class="portfolio-text-wrap">
+                  <p class="portfolio-text-category">SEO</p>
+                  <h2 class="portfolio-text-title">Pacific Soul Sailing</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio">
+            <a target="_blank" href="https://www.thesausageguycr.com">
+              <div class="portfolio-img">
+                <img
+                  src="img/the-sausage-guy.jpg"
+                  alt="Web Design Costa Rica"
+                />
+              </div>
+              <div class="portfolio-text">
+                <div class="portfolio-text-wrap">
+                  <p class="portfolio-text-category">Design</p>
+                  <h2 class="portfolio-text-title">
+                    The Sausage Guy Costa Rica
+                  </h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio">
+            <a target="_blank" href="https://www.lilpepperpants.com">
+              <div class="portfolio-img">
+                <img src="img/lil-pepper-pants.jpg" alt="Hosting Costa Rica" />
+              </div>
+              <div class="portfolio-text">
+                <div class="portfolio-text-wrap">
+                  <p class="portfolio-text-category">Hosting</p>
+                  <h2 class="portfolio-text-title">Lil Pepper Pants</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="slider slider__testimonial">
+          <div
+            class="slide__testimonial slide__testimonial--1 u-padding-top-large"
+          >
+            <div class="testimonial">
+              <h5 class="testimonial__header">Jota Works delivers results</h5>
+              <blockquote class="testimonial__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Tony Stark</h6>
+                <p class="testimonial__location">Playa Potrero, Costa Rica</p>
+              </address>
+            </div>
+          </div>
+
+          <div
+            class="slide__testimonial slide__testimonial--2 u-padding-top-large"
+          >
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                I watched my traffic grow so quickly
+              </h5>
+              <blockquote class="testimonial__text">
+                Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                laborum. Incidunt numquam perferendis veritatis neque
+                repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Illo deserunt exercitationem deleniti.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Wanda Maximoff</h6>
+                <p class="testimonial__location">Playa Flamingo, Costa Rica</p>
+              </address>
+            </div>
+          </div>
+
+          <div
+            class="slide__testimonial slide__testimonial--3 u-padding-top-large"
+          >
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Now that I'm hosting with Jota Works I have a peace of mind
+              </h5>
+              <blockquote class="testimonial__text">
+                Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                incidunt commodi architecto numquam omnis nulla autem,
+                necessitatibus blanditiis modi similique quidem. Odio aliquam
+                culpa dicta beatae quod maiores ipsa minus consequatur error
+                sunt, deleniti saepe aliquid quos inventore sequi.
+                Necessitatibus id alias reiciendis, perferendis facere.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Wade Wilson</h6>
+                <p class="testimonial__location">Lisbon, Portugal</p>
+              </address>
+            </div>
+          </div>
+
+          <button
+            class="slider__testimonial__btn slider__testimonial__btn--left"
+          >
+            &larr;
+          </button>
+          <button
+            class="slider__testimonial__btn slider__testimonial__btn--right"
+          >
+            &rarr;
+          </button>
+          <div class="dots dots__testimonial"></div>
+        </div> -->
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Professional Full Stack Web Development at Competitive Prices!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal u-margin-bottom-large">
+        Schedule your free intake!
+      </button>
+
+      <img src="img/footer-logo.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jotaworkscr"
+          >Jota Works Web Development</a
+        >.
+      </p>
+    </section>
+
+    <!-- <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Solutions</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Management</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Audits</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/headerLogo.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/#"
+          >Jota Works Web Development</a
+        >.
+      </p>
+    </footer> -->
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Schedule your <span class="highlight">free intake</span>
+      </h2>
+      <form class="modal__form" action="process_form.php" method="post">
+        <label>First Name</label>
+        <input type="text" name="first_name" required />
+        <label>Last Name</label>
+        <input type="text" name="last_name" required />
+        <label>Services</label>
+        <input type="text" name="services" required />
+        <label>Email Address</label>
+        <input type="email" name="email" required />
+        <button type="submit" class="btn">Submit &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script defer type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.management {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary, 0.8),
+      rgba($color-secondary-darker, 0.8)
+    ),
+    url(/dist/img/digitalmanagement.jpg);
+  background-size: cover;
+  transform: skewY(-4deg);
+  margin-top: -5rem;
+
+  & > * {
+    transform: skewY(4deg);
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  &-box {
+    background-color: rgba($color-white-offset, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: $border-radius-slight;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    transition: transform 0.3s;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
+
+    &__icon {
+      & svg {
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 5.5rem;
+        width: 7.5rem;
+      }
+
+      &--1 {
+        & svg {
+          fill: $color-secondary;
+        }
+      }
+
+      &--2 {
+        & svg {
+          fill: $color-primary;
+        }
+      }
+
+      &--3 {
+        & svg {
+          fill: $color-tertiary;
+        }
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+  }
+}

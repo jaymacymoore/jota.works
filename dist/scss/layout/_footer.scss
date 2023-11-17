@@ -1,0 +1,39 @@
+/* FOOTER */
+.footer {
+  padding: 10rem 3rem;
+  background-color: $color-grey-primary;
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  &__item {
+    margin-right: 4rem;
+  }
+
+  &__link {
+    font-size: $default-font-size;
+    color: $color-grey-light-2;
+    text-decoration: none;
+  }
+
+  &__logo {
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  &__copyright {
+    font-size: 1.4rem;
+    color: $color-grey-dark-2;
+    text-align: center;
+
+    & .footer__link {
+      font-size: 1.4rem;
+    }
+  }
+}

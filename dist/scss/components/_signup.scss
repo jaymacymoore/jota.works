@@ -1,0 +1,22 @@
+/* SIGNUP */
+.section--sign-up {
+  background-color: $color-grey-primary;
+  border-top: none;
+  border-bottom: 1px solid $color-grey-dark-4;
+  text-align: center;
+  padding: 10rem 3rem;
+
+  & .section__header {
+    color: $color-white-offset;
+    text-align: center;
+  }
+
+  & .section__title {
+    margin-bottom: 6rem;
+  }
+
+  & .btn {
+    font-size: 1.9rem;
+    padding: 2rem 5rem;
+  }
+}

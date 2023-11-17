@@ -1,0 +1,93 @@
+/* SOLUTIONS */
+.solutions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 12rem;
+
+  @include respond(phone-land) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 75%;
+
+    @include respond(tab-land) {
+      width: 100%;
+      margin-top: auto;
+      padding-top: 0rem;
+    }
+
+    @include respond(phone-land) {
+      width: 75%;
+      margin-top: 0 !important;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 50%;
+    }
+
+    &__hosting--responsive {
+      display: none;
+      @include respond(phone-land) {
+        display: block;
+      }
+    }
+
+    &__hosting--desktop {
+      @include respond(phone-land) {
+        display: none;
+      }
+    }
+  }
+
+  &__solution {
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    font-size: 1.5rem;
+
+    &--responsive {
+      @include respond(tab-land) {
+        display: flex;
+      }
+    }
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(phone-land) {
+      padding-top: 0rem !important;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary-opacity;
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+
+    & svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      fill: $color-primary;
+    }
+  }
+
+  &__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    @include respond(tab-land) {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+  }
+}

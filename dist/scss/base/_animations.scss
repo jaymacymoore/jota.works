@@ -1,0 +1,12 @@
+/* Image Blur/Unblur on Scroll */
+button:focus {
+  outline: none;
+}
+
+img {
+  transition: filter 0.5s;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}

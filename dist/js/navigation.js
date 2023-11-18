@@ -3,7 +3,7 @@ export default class Navigation {
     this.navLinks = document.querySelector('.nav__links');
     this.navLinksAll = document.querySelectorAll('.navigation__list');
     this.btnScrollTo = document.querySelector('.btn--scroll-to');
-    this.section1 = document.querySelector('#solutions');
+    this.solutions = document.querySelector('#solutions');
     this.nav = document.querySelector('.nav');
     this.navLink = document.querySelector('.nav__link');
     this.checkBox = document.querySelector(`#navi-toggle`);
@@ -49,7 +49,7 @@ export default class Navigation {
   };
 
   handleScrollButtonClick = () => {
-    this.section1.scrollIntoView({ behavior: 'smooth' });
+    this.solutions.scrollIntoView({ behavior: 'smooth' });
   };
 
   setupNavigation() {

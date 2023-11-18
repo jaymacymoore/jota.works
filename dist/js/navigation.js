@@ -55,6 +55,13 @@ export default class Navigation {
   setupNavigation() {
     this.navLinks.addEventListener('click', this.handleLinkClick);
     this.btnScrollTo.addEventListener('click', this.handleScrollButtonClick);
+
+    // Add event listener for smooth scroll to the top when clicking on the logo
+    const logoLink = document.querySelector('.nav__link--home');
+    logoLink.addEventListener('click', e => {
+      e.preventDefault();
+      document.body.scrollIntoView({ behavior: 'smooth' });
+    });
   }
 
   // Sub Menus

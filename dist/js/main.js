@@ -1,3 +1,4 @@
+// Import JS Files
 import Modal from './modal.js';
 import Tabs from './tabs.js';
 import Navigation from './navigation.js';

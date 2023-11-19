@@ -52,6 +52,19 @@
     &--responsive {
       @include respond(tab-land) {
         display: flex;
+        @media only screen and (max-width: 605px) {
+          flex-direction: column;
+        }
+      }
+
+      & + p {
+        @include respond(phone) {
+          width: 75vw;
+          margin-left: -7rem;
+        }
+        @media only screen and (max-width: 605px) {
+          text-align: center;
+        }
       }
     }
 
@@ -74,6 +87,22 @@
     border-radius: 50%;
     margin-bottom: 2rem;
 
+    @media only screen and (max-width: 605px) {
+      margin: 0 auto;
+    }
+
+    // @media only screen and (max-width: 480px) {
+    //   height: 6rem;
+    //   width: 7rem;
+    // }
+
+    // &--1 {
+    //   @media only screen and (max-width: 440px) {
+    //     height: 7rem;
+    //     width: 11rem;
+    //   }
+    // }
+
     & svg {
       height: 2.5rem;
       width: 2.5rem;
@@ -88,6 +117,10 @@
     @include respond(tab-land) {
       margin-top: 1rem;
       margin-left: 2rem;
+
+      @media only screen and (max-width: 605px) {
+        text-align: center;
+      }
     }
   }
 }

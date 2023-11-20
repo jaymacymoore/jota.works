@@ -60,7 +60,7 @@
       & + p {
         @include respond(phone) {
           width: 75vw;
-          margin-left: -7rem;
+          margin-left: -9rem;
         }
         @media only screen and (max-width: 605px) {
           text-align: center;
@@ -91,18 +91,6 @@
       margin: 0 auto;
     }
 
-    // @media only screen and (max-width: 480px) {
-    //   height: 6rem;
-    //   width: 7rem;
-    // }
-
-    // &--1 {
-    //   @media only screen and (max-width: 440px) {
-    //     height: 7rem;
-    //     width: 11rem;
-    //   }
-    // }
-
     & svg {
       height: 2.5rem;
       width: 2.5rem;
@@ -120,6 +108,7 @@
 
       @media only screen and (max-width: 605px) {
         text-align: center;
+        margin-left: -0.25rem;
       }
     }
   }

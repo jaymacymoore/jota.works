@@ -28,6 +28,7 @@
     & h1 {
       @include respond(tab-port) {
         margin: 0 auto;
+        text-align: center;
       }
     }
 

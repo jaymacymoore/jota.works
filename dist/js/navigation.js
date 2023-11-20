@@ -104,7 +104,7 @@ export default class Navigation {
     const headerObserver = new IntersectionObserver(this.stickyNav.bind(this), {
       root: null,
       threshold: 0,
-      rootMargin: `-${this.navHeight - 50}px`,
+      rootMargin: `-${this.navHeight}px`,
     });
     headerObserver.observe(this.header);
   }

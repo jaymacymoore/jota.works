@@ -17,8 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Email: $email\n";
 
     // Send email
-    if (mail($to_email, $subject, $message, $headers)) {
-        echo "Email sent successfully";
+   if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        mail($to_email, $subject, $message, $headers);
+        header("Location: index.html");
+        exit;
     } else {
         echo "Email failed to send";
     }

@@ -25,6 +25,15 @@
       margin: 0 auto;
     }
 
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 430px) {
+      width: 125%;
+      margin-left: -3rem;
+    }
+
     @media only screen and (max-width: 800px) {
       margin-top: 50%;
     }

@@ -39,7 +39,7 @@ export default class ImageLazyLoad {
     const imgObserver = new IntersectionObserver(this.loadImg, {
       root: null,
       threshold: 0,
-      rootMargin: '-200px',
+      rootMargin: '-50px 0px',
     });
     this.imgTargets.forEach(img => {
       imgObserver.observe(img);

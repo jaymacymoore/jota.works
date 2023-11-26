@@ -34,6 +34,10 @@
       margin-left: -3rem;
     }
 
+    @media only screen and (max-width: 429px) {
+      margin-left: -1.85rem;
+    }
+
     @media only screen and (max-width: 800px) {
       margin-top: 50%;
     }
